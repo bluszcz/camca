@@ -2,7 +2,7 @@
 
 ## Camera Calculator and helper
 
-![CamCa Logo](frontend/src/assets/images/logo-universal.png)
+![CamCa Logo](/frontend/src/assets/images/logo-universal.png)
 
 ## Recommended IDE Setup
 
