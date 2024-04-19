@@ -1,8 +1,8 @@
-# README
+# CamCa
 
-## About
+## Camera Calculator and helper
 
-This is the official Wails Svelte-TS template.
+![CamCa Logo](/frontend/src/assets/images/logo-universal.png)
 
 ## Live Development
 
