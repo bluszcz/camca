@@ -34,18 +34,21 @@ func (a *App) CalcPixDens(sensorX string, sensorY string, pixelWidth string) str
 	if (err == nil) && (err2 == nil) {
 
 		result := sX / pW * 1000
-		return fmt.Sprintf("%f", result)
+		return fmt.Sprintf("%.2f", result)
 	}
 
-	// if err != nil {
-	// 	if err2 != nil {
-	// 		result := sX / pW * 1000
-	// 		return fmt.Sprintf("%f", result)
-	// 	} else {
-	// 		return fmt.Sprintf("Error3")
+	return "Error"
+}
 
-	// 	}
-	// 	return fmt.Sprintf("Error2")
-	// }
+func (a *App) CalcSensorRatio(sensorX string, sensorY string) string {
+	sX, err := strconv.ParseFloat(sensorX, 64)
+	sY, err2 := strconv.ParseFloat(sensorY, 64)
+
+	if (err == nil) && (err2 == nil) {
+
+		result := sX / sY
+		return fmt.Sprintf("%.2f", result)
+	}
+
 	return "Error"
 }

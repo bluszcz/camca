@@ -3,4 +3,6 @@
 
 export function CalcPixDens(arg1:string,arg2:string,arg3:string):Promise<string>;
 
+export function CalcSensorRatio(arg1:string,arg2:string):Promise<string>;
+
 export function Greet(arg1:string):Promise<string>;
