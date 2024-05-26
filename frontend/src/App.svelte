@@ -11,6 +11,7 @@
   let FOV: string;
   let resultFOV: string;
   let cropFactor: string;
+  let fps: string;
 
   let cameras = [
     { id: 0, name: "Custom", sensorX: "", sensorY: "", pixelWidth: "" },
@@ -240,6 +241,48 @@
         </table> -->
       </table> 
         <hr />
+
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="inputs">
+        180 deegre Shutter Speed
+        <hr/>
+        <div class="input-box">
+          <label for="fps">Frames per second fps:</label>
+          <input
+            autocomplete="off"
+            bind:value={fps}
+            on:change={onfps}
+            class="input"
+            id="fps"
+            type="text"
+          />
+        </div>
+        <div class="input-box">
+          <label for="cropFactor">Angle </label>
+          <input
+            autocomplete="off"
+            bind:value={cropFactor}
+            on:change={onCropFactor}
+            class="input"
+            id="cropFactor"
+            type="text"
+          />
+        </div>
+        <div class="input-box">
+          <label for="cropFactor">Shutter Speed 1/</label>
+          <input
+            autocomplete="off"
+            bind:value={cropFactor}
+            on:change={onCropFactor}
+            class="input"
+            id="cropFactor"
+            type="text"
+          />
+        </div>
+        <hr/>
+
 
       </div>
     </div>
